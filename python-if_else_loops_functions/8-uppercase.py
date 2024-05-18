@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 def uppercase(str):
     for let in str:
         if (ord(let) >= ord('a') and ord(let) <= ord('z')):
