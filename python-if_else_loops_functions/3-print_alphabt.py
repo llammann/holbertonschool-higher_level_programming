@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-alphabet= ''
+alphabet = ''
 for alpha in range(97, 123):
-    if(chr(alpha) == 'q' or chr(alpha) == 'e'):
+    if (chr(alpha) == 'q' or chr(alpha) == 'e'):
         continue
     else:
         alphabet += chr(alpha)
