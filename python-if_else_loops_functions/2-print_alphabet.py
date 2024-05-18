@@ -2,4 +2,4 @@
 alphabet=''
 for alpha in range(97,123):
     alphabet += chr(alpha)
-print(alphabet)
+print(f"{alphabet}")
