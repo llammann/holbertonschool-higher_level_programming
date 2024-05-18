@@ -1,3 +1,5 @@
 #!/usr/bin/python3
+alphabet=''
 for alpha in range(97,123):
-    print(str(chr(alpha)), end="")
+    alphabet += chr(alpha)
+print(alphabet)
