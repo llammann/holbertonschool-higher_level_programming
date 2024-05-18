@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-alphabet=''
-for alpha in range(97,123):
-    alphabet += chr(alpha)
-print(f"{alphabet}")
+
+alphabet = ''.join([chr(i) for i in range(97, 123)])
+print(f"{alphabet}", end='')
+
+
