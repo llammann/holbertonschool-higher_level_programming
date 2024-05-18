@@ -22,5 +22,5 @@ cd holbertonschool-higher_level_programming
 ## Contact
 For any questions or feedback, please contact:
 
-Laman Nazirli - bd7n2v9tr@code.edu.az
-GitHub: llammann
+Laman Nazirli - bd7n2v9tr@code.edu.az <br>
+GitHub: [llammann](https://github.com/llammann)
