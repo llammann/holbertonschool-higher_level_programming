@@ -23,4 +23,4 @@ python3 0-positive_or_negative.py
 For any questions or feedback, please contact:
 
 Laman Nazirli - bd7n2v9tr@code.edu.az <br>
-GitHub: llammann
+GitHub: [llammann](https://github.com/llammann)
