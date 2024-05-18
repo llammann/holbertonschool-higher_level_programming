@@ -16,7 +16,7 @@ To run a script, navigate to this directory in your terminal and execute the scr
 
 ```bash
 python3 0-positive_or_negative.py
-
+```
 
 ## Contact
 
