@@ -2,8 +2,6 @@
 
 if __name__ == "__main__":
     import hidden_4
-
-    all = dir(hidden_4)
-    for one in all:
-        if one[:2] != "__":
-            print(one)
+    module_names = sorted(name for name in dir(hidden_4) if not name.startswith('__'))
+    for name in module_names:
+        print(name)
