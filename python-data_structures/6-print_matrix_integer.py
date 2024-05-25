@@ -1,14 +1,17 @@
 #!/usr/bin/python3
 
-
+matry=[]
 def print_matrix_integer(matrix=[[]]):
-    if not matrix:
+    if matrix.size == 0:
         print()
         return
 
     for row in matrix:
-        for i, num in enumerate(row):
-            if i != len(row) - 1:
+        for idx, num in enumerate(row):
+            if idx != len(row) - 1:
                 print("{:d}".format(num), end=" ")
             else:
                 print("{:d}".format(num))
+            
+            
+
