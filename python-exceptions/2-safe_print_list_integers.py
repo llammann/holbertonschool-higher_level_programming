@@ -7,8 +7,8 @@ def safe_print_list_integers(my_list=[], x=0):
             if isinstance(my_list[i], int):
                 print("{:d}".format(my_list[i]), end='')
                 real_count += 1
-        except IndexError:
-            raise
-traceback
+        except IndexError as e:
+            print(e, end='')
+            break
     print()
     return real_count
