@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 
-matry=[]
+
 def print_matrix_integer(matrix=[[]]):
+    if not matrix:
+        print()
+
     for row in matrix:
         for idx, num in enumerate(row):
             if idx != len(row) - 1:
