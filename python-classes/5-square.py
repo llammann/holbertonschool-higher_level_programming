@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+#5-square.py
 """
 This module defines a Square class with private instance attribute 'size' and methods to retrieve its size, set its size, compute its area, and print the square.
 """
