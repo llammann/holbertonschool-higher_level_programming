@@ -2,4 +2,5 @@
 # 0-square.py
 
 class Square:
+    """Represents a square."""
     pass
