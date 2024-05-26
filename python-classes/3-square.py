@@ -6,6 +6,7 @@ The size must be an integer and greater than or equal to 0.
 Includes a method to calculate the area of the square.
 """
 
+
 class Square:
     """
     Represents a square with a specific size.
