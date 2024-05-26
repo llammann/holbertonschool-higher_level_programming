@@ -11,6 +11,7 @@ class Square:
     """
     Represents a square with a specific size.
     """
+
     def __init__(self, size=0):
         """
         Initializes the square with a specific size.
@@ -20,7 +21,8 @@ class Square:
         if size < 0:
             raise ValueError("size must be >= 0")
         self.__size = size
-    def area(self):
+   
+   def area(self):
         """
         Computes the area of the square.
         """
