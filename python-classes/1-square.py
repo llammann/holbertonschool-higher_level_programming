@@ -9,8 +9,6 @@ class Square:
     """
     Represents a square with a specific size.
     """
-    
-    
     def __init__(self, size):
         """
         Initializes the square with a specific size.
