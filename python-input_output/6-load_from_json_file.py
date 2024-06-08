@@ -1,18 +1,21 @@
-#!/usr/bin/python3
+i#!/usr/bin/python3
 """
-This module contains a function `save_to_json_file`.
+This module contains a function `load_from_json_file`.
 """
 
 import json
 
 
-def save_to_json_file(my_obj, filename):
+def load_from_json_file(filename):
     """
-    Writes an object to a text file using a JSON representation.
+    Creates an object from a JSON file.
 
     Args:
-        my_obj: The object to be saved to the file.
-        filename: The file name.
+        filename (str): The name of the JSON file.
+
+    Returns:
+        object: The object created from the JSON file.
     """
-    with open(filename, 'w', encoding='utf-8') as file:
-        json.dump(my_obj, file)
+    with open(filename, 'r') as file:
+        obj = json.load(file)
+    return obj
