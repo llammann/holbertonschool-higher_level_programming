@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+This module contains a function `add_items_to_list_and_save`.
+"""
 
 import sys
 from os.path import exists
