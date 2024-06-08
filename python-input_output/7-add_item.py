@@ -6,7 +6,7 @@ This module contains a function `add_items_to_list_and_save`.
 import sys
 from os.path import exists
 
-load_from_json_file = __import__('6-load_from_json_file.py').load_from_json_file
+load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
 
 def add_items_to_list_and_save():
