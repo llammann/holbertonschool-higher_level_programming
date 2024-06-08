@@ -34,9 +34,7 @@ class Student:
             dict: A dictionary containing
             the requested attributes of the student.
         """
-        if isinstance(attrs, list) and
-               all(isinstance(attr, str) for attr in attrs):
-
+        if isinstance(attrs, list) and all(isinstance(attr, str) for attr in attrs):
             return {
                 attr: getattr(self, attr)
                 for attr in attrs if hasattr(self, attr)
