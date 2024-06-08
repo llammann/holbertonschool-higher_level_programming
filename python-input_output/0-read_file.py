@@ -1,19 +1,15 @@
 #!/usr/bin/python3
 """
-This module contains a function `write_file`
+This module contains a function `read_file`
 """
 
 
-def write_file(filename="", text=""):
+def read_file(filename=""):
     """
-    Writes a string to a text file (UTF8) and returns the number of characters written.
+    Reads a text file (UTF8) and prints it to stdout:
 
     Args:
         filename (str): The file name
-        text (str): The text
-
-    Returns:
-        int: The number of characters.
     """
-    with open(filename, 'w', encoding='utf-8') as file:
-        return file.write(text)
+    with open(filename, 'r', encoding='utf-8') as file:
+        print(file.read(), end="")
