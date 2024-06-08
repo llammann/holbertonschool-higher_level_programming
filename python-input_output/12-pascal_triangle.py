@@ -27,6 +27,7 @@ def pascal_triangle(n):
 
     return triangle
 
+
 def print_triangle(triangle):
     """
     Print Pascal's triangle.
