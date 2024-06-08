@@ -46,5 +46,5 @@ class Student:
         Args:
             json (dict): A dictionary where keys are attribute names and values are attribute values.
         """
-        for key, value in json.items():
-            setattr(self, key, value)
+        for key in json:
+            self.__dict__.update({key: json[key]})
