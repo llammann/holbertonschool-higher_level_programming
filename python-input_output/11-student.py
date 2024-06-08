@@ -31,7 +31,8 @@ class Student:
                           If None, retrieve all attributes.
 
         Returns:
-            dict: A dictionary containing the requested attributes of the student.
+            dict: A dictionary containing
+            the requested attributes of the student.
         """
         if attrs is None:
             return self.__dict__
@@ -42,20 +43,20 @@ class Student:
 
     def reload_from_json(self, json):
         """
-        Replaces all attributes of the Student instance with values from a dictionary.
+        Replaces all attributes of the Student instance
+        with values from a dictionary.
 
         Args:
-            json (dict): A dictionary where keys are attribute names and values are attribute values.
+            json (dict): A dictionary where keys are
+            attribute names and values are attribute values.
         """
         for key in json:
             self.__dict__.update({key: json[key]})
 
 
 def main():
-    # Your test code or main program logic can go here
     pass
 
 
 if __name__ == "__main__":
     main()
-
