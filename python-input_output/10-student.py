@@ -25,7 +25,7 @@ class Student:
     def to_json(self, attrs=None):
         """
         Retrieves a dictionary representation of the student instance.
- 
+
         Args:
             attrs (list): List of attribute names to retrieve.
 
@@ -34,7 +34,7 @@ class Student:
             the requested attributes of the student.
         """
         if (isinstance(attrs, list) and
-            all(isinstance(attr, str) for attr in attrs)):
+                all(isinstance(attr, str) for attr in attrs)):
 
             return {
                 attr: getattr(self, attr)
