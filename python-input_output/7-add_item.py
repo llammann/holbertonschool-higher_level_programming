@@ -5,6 +5,7 @@ This module contains a function `add_items_to_list_and_save`.
 
 import sys
 from os.path import exists
+
 import save_to_json_file
 import load_from_json_file
 
