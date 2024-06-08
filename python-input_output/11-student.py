@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+i#!/usr/bin/python3
 """
 This module defines a class `Student`.
 """
@@ -23,33 +23,44 @@ class Student:
         self.age = age
 
     def to_json(self, attrs=None):
-    """
-    Retrieves a dictionary representation of the student instance.
+        """
+        Retrieves a dictionary representation of the student instance.
 
-    Args:
-        attrs (list): List of attribute names to retrieve.
-                      If None, retrieve all attributes.
+        Args:
+            attrs (list): List of attribute names to retrieve.
+                          If None, retrieve all attributes.
 
-    Returns:
-        dict: A dictionary containing the requested attributes of the student.
-    """
-    if attrs is None:
-        return self.__dict__
-    elif isinstance(attrs, list) and all(isinstance(attr, str) for attr in attrs):
-        return {
-            attr: getattr(self, attr)
-            for attr in attrs if hasattr(self, attr)
-        }
-    else:
-        return {}
-
+        Returns:
+            dict: A dictionary containing
+            the requested attributes of the student.
+        """
+        if attrs is None:
+            return self.__dict__
+        elif isinstance(attrs, list) and
+                 all(isinstance(attr, str) for attr in attrs):
+            return {
+                attr: getattr(self, attr)
+                for attr in attrs if hasattr(self, attr)
+            }
+        else:
+            return {}
 
     def reload_from_json(self, json):
         """
-        Replaces all attributes of the Student instance with values from a dictionary.
+        Replaces all attributes of the Student instance with
+        values from a dictionary.
 
         Args:
-            json (dict): A dictionary where keys are attribute names and values are attribute values.
+            json (dict): A dictionary where keys are attribute names
+            and values are attribute values.
         """
         for key in json:
             self.__dict__.update({key: json[key]})
+
+
+def main():
+    pass
+
+
+if __name__ == "__main__":
+    main()
