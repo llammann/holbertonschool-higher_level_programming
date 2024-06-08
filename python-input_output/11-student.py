@@ -1,4 +1,4 @@
-i#!/usr/bin/python3
+#!/usr/bin/python3
 """
 This module defines a class `Student`.
 """
@@ -31,13 +31,11 @@ class Student:
                           If None, retrieve all attributes.
 
         Returns:
-            dict: A dictionary containing
-            the requested attributes of the student.
+            dict: A dictionary containing the requested attributes of the student.
         """
         if attrs is None:
             return self.__dict__
-        elif isinstance(attrs, list) and
-                 all(isinstance(attr, str) for attr in attrs):
+        elif isinstance(attrs, list) and all(isinstance(attr, str) for attr in attrs):
             return {
                 attr: getattr(self, attr)
                 for attr in attrs if hasattr(self, attr)
@@ -47,20 +45,19 @@ class Student:
 
     def reload_from_json(self, json):
         """
-        Replaces all attributes of the Student instance with
-        values from a dictionary.
+        Replaces all attributes of the Student instance with values from a dictionary.
 
         Args:
-            json (dict): A dictionary where keys are attribute names
-            and values are attribute values.
+            json (dict): A dictionary where keys are attribute names and values are attribute values.
         """
         for key in json:
             self.__dict__.update({key: json[key]})
 
 
 def main():
+    # Your test code or main program logic can go here
     pass
 
 
-if __name__ == "__main__":
-    main()
+if __name__ == "__main__":    main()
+
