@@ -12,6 +12,8 @@ def class_to_json(obj):
     Args:
         obj: An instance of a Class.
 
+    Returns:
+        A dictionary representing the JSON serializable attributes
+        of the object.
     """
-
-    return obj.__dict___
+    return obj.__dict__
