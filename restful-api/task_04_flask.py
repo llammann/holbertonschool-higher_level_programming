@@ -3,10 +3,7 @@ from flask import Flask, jsonify, request
 app = Flask(__name__)
 
 # Dummy data for users
-users = {
-    "jane": {"username": "jane", "name": "Jane", "age": 28, "city": "Los Angeles"},
-    "john": {"username": "john", "name": "John", "age": 30, "city": "New York"}
-}
+users = {}
 
 # Welcome message for the root endpoint
 @app.route('/')
@@ -37,7 +34,9 @@ def get_user(username):
 def add_user():
     data = request.json
     username = data.get('username')
-    if username in users:
+    if not username:
+        return jsonify({"error": "Username is required"}), 400
+    elif username in users:
         return jsonify({"error": "Username already exists"}), 400
     else:
         users[username] = data
@@ -45,3 +44,4 @@ def add_user():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
