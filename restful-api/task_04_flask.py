@@ -36,5 +36,10 @@ def add_user():
         users[username] = data
         return jsonify({"message": "User added", "user": data}), 201
 
+def test_add_user_duplicate_username():
+    response = app.test_client().post('/add_user', json={"username": "john", "name": "John", "age": 30, "city": "New York"})
+    assert response.status_code == 409
+
 if __name__ == '__main__':
     app.run(debug=True)
+
