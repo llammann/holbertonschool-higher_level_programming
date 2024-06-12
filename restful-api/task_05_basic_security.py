@@ -69,5 +69,5 @@ def handle_needs_fresh_token_error(err):
     return jsonify({"error": "Fresh token required"}), 401
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0', port=5000)
 
