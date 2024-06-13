@@ -20,7 +20,7 @@ class APIServer(BaseHTTPRequestHandler):
             self.wfile.write("OK".encode('utf-8'))
         else:
             self._set_response(status_code=404, content_type='text/plain')
-            self.wfile.write("Not Found".encode('utf-8'))  # Ensure this matches the expected content
+            self.wfile.write("Endpoint not found".encode('utf-8'))
 
 def run(server_class=HTTPServer, handler_class=APIServer, port=8000):
     server_address = ('', port)
